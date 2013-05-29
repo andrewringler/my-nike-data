@@ -1,25 +1,27 @@
 /*
  * GET daily fuel.
  */
-var sys = require('util'),
-    rest = require('restler');
-
+var sys = require('util');
+var Shred = require("shred");
+var shred = new Shred();
 
 exports.dailyfuel = function(req, res) {
-    // rest.get('https://api.nike.com/me/sport/activities?access_token=' + process.env.NIKE_ACCESS_TOKEN + '&count=365').on('complete', function(data) {
-    //     sys.puts(data[0].message); // auto convert to object
-    // });
 
-    var nikeReq = 'https://api.nike.com/me/sport/activities?access_token=' + process.env.NIKE_ACCESS_TOKEN;
-    sys.puts('GET '+nikeReq);
-    rest.get(nikeReq).on('complete', function(result, res) {
-        if (result instanceof Error) {
-            sys.puts('Error: ' + result.message);
-            //this.retry(5000); // try again after 5 sec
-        } else if (res.statusCode != 200) {
-            sys.puts('Error, response: ' + res.statusCode + ' result: \n' + result);
-        } else {
-            sys.puts(result);
+    var nikeUrl = 'https://api.nike.com/me/sport/activities?access_token=' + process.env.NIKE_ACCESS_TOKEN;
+    sys.puts('GET ' + nikeUrl);
+
+    var req = shred.get({
+        url: nikeUrl,
+        headers: {
+            Accept: "application/json"
+        },
+        on: {
+            200: function(response) {
+                console.log(response.content.data);
+            },
+            response: function(response) {
+                console.log("Oh no!");
+            }
         }
     });
 

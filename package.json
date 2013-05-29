@@ -9,6 +9,6 @@
     "express": "3.2.5",
     "hjs": "*",
     "stylus": "*",
-    "restler": "2.0.1"
+    "shred": "0.8.8"
   }
 }
