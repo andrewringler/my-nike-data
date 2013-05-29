@@ -9,6 +9,8 @@
     "express": "3.2.5",
     "hjs": "*",
     "stylus": "*",
-    "shred": "0.8.8"
+    "underscore": "1.4.4",
+    "shred": "0.8.8",
+    "moment": "2.0.0"
   }
 }

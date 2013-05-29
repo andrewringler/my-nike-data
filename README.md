@@ -11,6 +11,8 @@ Go to Terminal
     > export NIKE_ACCESS_TOKEN=your access token from https://developer.nike.com
     > npm install
     > node app
+    
+Then visit http://my-nike-data.andrewringler.c9.io
 
 ### Thanks to
 Calendar View - http://bl.ocks.org/mbostock/4063318
