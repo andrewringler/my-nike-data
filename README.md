@@ -20,14 +20,16 @@ Go to Terminal
     
 Then visit http://my-nike-data.andrewringler.c9.io
 
-### Deploy to Heroku
+### Deploy to Heroku (from c9.io terminal)
 
+    pushd
     cd
     wget http://assets.heroku.com/heroku-client/heroku-client.tgz
     tar xzfv heroku-client
     cd heroku-client/bin
     PATH=$PATH:$PWD
 
+    popd
     heroku create
     heroku config:set NIKE_ACCESS_TOKEN=your access token from https://developer.nike.com
     git push heroku master
