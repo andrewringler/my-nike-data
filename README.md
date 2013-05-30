@@ -7,6 +7,9 @@ I wanted to build something with [Cloud 9](https://c9.io) so I made this with no
 The app pulls in my Nike FuelBand data from the [Nike Plus API](https://developer.nike.com) on every page load and then 
 visualizes it code from Mike Bostock's [Calendar View](http://bl.ocks.org/mbostock/4063318).
 
+The latest version should be running on heroku: [andrew-nike-data.herokuapp.com](http://andrew-nike-data.herokuapp.com/), but if
+not here is a recent screenshot:
+
 ![Andrew's NikePlus Data from Aug 2012 to 2013](documentation/nike-data.png)
 
 ### Get Started (on c9.io)
@@ -33,6 +36,8 @@ Then visit http://my-nike-data.andrewringler.c9.io
     heroku create
     heroku config:set NIKE_ACCESS_TOKEN=your access token from https://developer.nike.com
     git push heroku master
+    
+Then visit [andrew-nike-data.herokuapp.com](http://andrew-nike-data.herokuapp.com/)
 
 ### Thanks to
 Mike Bostock's [Calendar View](http://bl.ocks.org/mbostock/4063318) for the visualization. Currently
