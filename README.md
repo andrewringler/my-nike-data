@@ -3,6 +3,10 @@ my-nike-data
 
 WIP Just my Nike+ data v0.01
 
+I wanted to build something with [Cloud 9](https://c9.io) so I made this with nodejs. It lets you code, fully in the cloud, thats pretty cool.
+The app pulls in my Nike FuelBand data from the [Nike Plus API](https://developer.nike.com) on every page load and then 
+visualizes it code from Mike Bostock's [Calendar View](http://bl.ocks.org/mbostock/4063318).
+
 ![Andrew's NikePlus Data from Aug 2012 to 2013](documentation/nike-data.png)
 
 ### Get Started (on c9.io)
@@ -17,4 +21,5 @@ Go to Terminal
 Then visit http://my-nike-data.andrewringler.c9.io
 
 ### Thanks to
-Calendar View - http://bl.ocks.org/mbostock/4063318
+Mike Bostock's [Calendar View](http://bl.ocks.org/mbostock/4063318) for the visualization. Currently
+it is copied pretty verbatim into index.hjs. Bostock request's 'fair use for educational purposes.'
