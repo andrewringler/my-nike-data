@@ -20,6 +20,18 @@ Go to Terminal
     
 Then visit http://my-nike-data.andrewringler.c9.io
 
+### Deploy to Heroku
+
+    cd
+    wget http://assets.heroku.com/heroku-client/heroku-client.tgz
+    tar xzfv heroku-client
+    cd heroku-client/bin
+    PATH=$PATH:$PWD
+
+    heroku create
+    heroku config:set NIKE_ACCESS_TOKEN=your access token from https://developer.nike.com
+    git push heroku master
+
 ### Thanks to
 Mike Bostock's [Calendar View](http://bl.ocks.org/mbostock/4063318) for the visualization. Currently
 it is copied pretty verbatim into index.hjs. Bostock request's 'fair use for educational purposes.'
