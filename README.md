@@ -1,7 +1,10 @@
 my-nike-data
 ============
 
-WIP Just my Nike+ data
+WIP Just my Nike+ data v0.01
+
+[[documentation/nike-data.png]]
+
 
 ### Get Started (on c9.io)
 From https://c9.io/andrewringler/my-nike-data
