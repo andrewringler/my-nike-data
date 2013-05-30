@@ -3,8 +3,7 @@ my-nike-data
 
 WIP Just my Nike+ data v0.01
 
-[[documentation/nike-data.png]]
-
+![Andrew's NikePlus Data from Aug 2012 to 2013](documentation/nike-data.png)
 
 ### Get Started (on c9.io)
 From https://c9.io/andrewringler/my-nike-data
