@@ -9,10 +9,12 @@ var express = require('express')
 , data = require('./routes/data')
 , http = require('http')
 , path = require('path');
-var bodyParser = require('body-parser');
 // var favicon = require('serve-favicon');
 // var morgan = require('morgan');
 var app = express();
+
+// var bodyParser = require('body-parser');
+// var methodOverride = require('method-override');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -21,7 +23,7 @@ app.set('view engine', 'hjs');
 // app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 //app.use(express.logger('dev'));
 // app.use(express.bodyParser());
-app.use(express.methodOverride());
+// app.use(express.methodOverride());
 app.use(app.router);
 app.use(require('stylus').middleware(__dirname + '/public'));
 app.use(express.static(path.join(__dirname, 'public')));
