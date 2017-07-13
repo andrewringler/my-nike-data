@@ -10,7 +10,7 @@ var express = require('express')
 , http = require('http')
 , path = require('path');
 // var favicon = require('serve-favicon');
-var morgan = require('morgan');
+// var morgan = require('morgan');
 var app = express();
 
 // all environments
