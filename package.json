@@ -13,7 +13,7 @@
     "hjs": "*",
     "stylus": "*",
     "underscore": "1.4.4",
-    "shred": "0.8.8",
+    "shred": "0.8.10",
     "moment": "2.0.0"
   }
 }
