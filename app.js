@@ -9,7 +9,7 @@ var express = require('express')
 , data = require('./routes/data')
 , http = require('http')
 , path = require('path');
-var favicon = require('serve-favicon');
+// var favicon = require('serve-favicon');
 var morgan = require('morgan');
 var app = express();
 
