@@ -4,20 +4,21 @@
  */
 
 var express = require('express')
-  , routes = require('./routes')
-  , user = require('./routes/user')
-  , data = require('./routes/data')
-  , http = require('http')
-  , path = require('path');
-
+,routes = require('./routes')
+, user = require('./routes/user')
+, data = require('./routes/data')
+, http = require('http')
+, path = require('path');
+var favicon = require('serve-favicon');
+var morgan = require('morgan');
 var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'hjs');
-app.use(express.favicon());
-app.use(express.logger('dev'));
+// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+//app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
@@ -42,4 +43,3 @@ if (process.env.NIKE_ACCESS_TOKEN) {
     console.log('Oops, no NIKE_ACCESS_TOKEN found as environment variable');    
     console.log('try, "export NIKE_ACCESS_TOKEN=your token"');
 }
-
